@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MoonNearOey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Love+Light&display=swap" rel="stylesheet">
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+ 
+ 
+ 
+  </head>
+
+  <body>
+
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-right text-black">
+      <main>
+        <h4>Kepada <span></span>, Anda diundang ke acara pernikahan</h4>
+        <h1>Maryoso & Siti Kholisah</h1>
+        <p>Remember the date :</p>
+
+        <div class="simply-countdown"></div>
+        
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+    
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">MoonNearOey</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  MoonNearOey
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link" href="#hero">Home</a>
+                  <a class="nav-link" href="#info">Info</a>
+                  <a class="nav-link" href="#story">Story</a>
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                  <a class="nav-link" href="#rsvp">RSVP</a>
+                  <a class="nav-link" href="#gifts">Gifts</a>
+                </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+         <div class="col-md-8 col-10 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 11 September 2024 di Semarang, Jawa Tengah.</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i agar bisa hadir pada acara pernikahan kami.</p>
+         </div> 
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Maryoso</h3>
+                <p>Cinta tak pernah datang terlambat. Ia menemukan yang pantas dipertemukan & menyatukan yang pantas dipersatukan sesuai skenarioNya. Bila memang cinta yang ada adalah cinta sejati. Hati takkan mudah berubah, rasa akan selalu tertaut meskipun raga tak mampu tersentuh. Karena cinta memiliki dua sifat : syauqun wa istiyaqun, rindu ingin berjumpa dan enggan berpisah setelah berjumpa... Anta ma'a man ahbabta...</p>
+                <p1>Putra dari : <br> Bapak Sahudi & Ibu Sarpini</p1>
+              </div>
+              <div class="col-4">
+                <img src="img/powerfull.jpg" alt="Maryoso" class="img-responsive rounded-circle">
+              </div>
+            </div>
+          </div>
+
+          <!-- icon heart -->
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/colourfull.jpg" alt="Siti Kholisah" class="img-responsive rounded-circle">
+              </div>
+              <div class="col-8">
+                <h3>Siti Kholisah</h3>
+                <p>Menjalin suatu hubungan itu butuh dua orang yang kuat, dan untuk menjadi kuat,.. itu adalah tanggung jawab masing-masing. Cinta takkan pernah hadir jika menunggu kesempurnaan seseorang, sebab cinta hanya datang pada dia yang benar- benar dapat menerima ketidak-sempurnaan dan kemudian mencintainya dengan cara yang sempurna. Karena sejatinya cinta ialah yang mencintaiNya dan sama² meraih ridhoNya...</p>
+                <p2>Putra dari : <br> Bapak Rasdini & Ibu Kastumi</p2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Informasi Acara</h2>
+          <p class="alamat">Alamat : The Wujil Resorts & Conventions. <br> Jl. Soekarno Hatta No.km 25, RW.5, Setiggen, Wujil, Kec. Bergas, Kabupaten Semarang, Jawa Tengah 50552.</p>
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126674.80789522151!2d110.3456497!3d-7.1735602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70867b402d871f%3A0xa8202814f4edc3f8!2sThe%20Wujil%20Resort%20%26%20Conventions%2C%20Ungaran%20-%20Semarang!5e0!3m2!1sid!2sid!4v1710731893465!5m2!1sid!2sid" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          <a href="https://maps.app.goo.gl/N9GudxobF2QuotY49"target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+          <p class="description">Keyakinan dan prinsip dasar agamalah yang akan menjadi benteng itu semua, tanpa Keimanan dan ketaqwaan dalam rumah tangga maka akan cepat rapuh. Bersyukurlah yang mempunyai pasangan sholeh maupun sholehah. Kelak ia akan Setia selalu bersamamu, menemani langkah perjalananmu tak hanya didunia, tapi menggandengmu sampai ke jannahNya.</p>
+        </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-6 col-10">
+            <div class="card text-center text-bg-light mb-4">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>07:00 - 09:00</span>
+                  </div>
+                  <div class="col-6">
+                    <i class="bi bi-calendar-check d-block"></i>
+                    <span>Rabu, 11 September 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif serta menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10:00 - Selesai</span>
+                  </div>
+                  <div class="col-6">
+                    <i class="bi bi-calendar-check d-block"></i>
+                    <span>Rabu, 11 September 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Ada Live Music Hadroh dari Az-Zahir dan Pengajian yang akan disampaikan oleh Bapak K.H Anwar Zahid dari Bojonegoro.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Two lives, two hearts, joined together in friendship, united forever in love.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/299/299);"></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                <h3>Pertama Bertemu</h3>
+                <span>6 Oktober 2023</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Berawal dari tempat kita ngaji mungkin itu pertama kita bertemu, kita sama - sama belajar di Guru yang sama, dari situlah benih - benih cinta mulai bersemi.</p>
+                </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                <h3>Mulai Serius</h3>
+                <span>11 November 2023</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Singkat cerita, karena basicnya santri jadi tidak lama-lama juga pacaran, pernah kita di sidang sama pak Kyai, beliau bilang gini "ini kan kalian berdua sudah sering jalan bareng, kalau serius lebih cepat lebih baik". nah...</p>
+                </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                <h3>Pertunangan</h3>
+                <span>3 Maret 2024</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Next habis disidang pasti tau lah... masing - masing dari kita bilang ke orang tuanya. Kalau tadi habis disidang pak Kyai dan disuruh Nikah... hhaa. Lanjut, setelah bilang ke Bapak & Ibu mereka pun menyetujui. Mulailah para orang tua mempersiapkan pertunangan untuk anak - anaknya...begitulah.</p>
+                </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/302/302);"></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                <h3>Menikah</h3>
+                <span>11 September 2024</span>
+                </div>
+                <div class="timeline-body">
+                  <p>There is only one thing to do words for you...yeaa I love You, Tibalah hari dimana kita dipersatukan oleh Allah Subhanahu wa ta'ala. Sebab Cinta yang didasari cinta kepada-Nya pasti tulus dalam mencinta dan sudah pasti dicintai-Nya.</p>
+                </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Memori Kisah Kami</span>
+          <h2>Galeri Foto</h2>
+          <p>Foto-foto tersebut menggambarkan bagaimana pasangan saling melengkapi, menjaga dan memahami satu sama lain, serta saling menghargai lebih dari sekedar harta atau penampilan, gambaran ini menunjukkan bahwa cinta sejati bersandar pada kebersamaan dan kesetiaan, baik dalam suka maupun duka.</p>
+        </div>
+      </div>
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+        <div class="col mt-3">
+          <a href="img/gallery/zafa.jpg" data-toggle="lightbox" data-caption="gambar1" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/IMG-20221127-WA0003.jpg" alt="gambar1" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/img1.png" data-toggle="lightbox" data-caption="gambar2" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/mono.jpg" alt="gambar2" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col mt-3">
+          <a href="img/gallery/img5.jpg" data-toggle="lightbox" data-caption="gambar6" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/img5.jpg" alt="gambar6" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/img7.jpg" data-toggle="lightbox" data-caption="gambar7" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/img7.jpg" alt="gambar7" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col mt-3">
+          <a href="img/gallery/img11.jpg" data-toggle="lightbox" data-caption="gambar11" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/img11.jpg" alt="gambar11" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col mt-3">
+          <a href="img/gallery/jpg6.jpg" data-toggle="lightbox" data-caption="gambar15" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/jpg6.jpg" alt="gambar15" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/jpg19.jpg" data-toggle="lightbox" data-caption="gambar16" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/jpg19.jpg" alt="gambar16" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/jpg20.jpg" data-toggle="lightbox" data-caption="gambar17" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/jpg20.jpg" alt="gambar17" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/jpg38.jpg" data-toggle="lightbox" data-caption="gambar18" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/jpg38.jpg" alt="gambar18" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/miladunka.jpg" data-toggle="lightbox" data-caption="gambar19" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/miladunka.jpg" alt="gambar19" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        <div class="col mt-3">
+          <a href="img/gallery/jpg37.jpg" data-toggle="lightbox" data-caption="gambar20" data-gallery="mygallery">
+            <img src="img/gallery/thumbnail/jpg37.jpg" alt="gambar20" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+       
+      </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+        </div>
+      </div>
+
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+      action="https://script.google.com/macros/s/AKfycbyC9xsgT0wo6DgbWM2hbq1tvRoIfnIAdKQbedCM80f9ISb4Uxb-kvrScXO_H_WXSkr-/exec" id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="7" length="1" value="1">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select">
+            <option selected>Pilih salah satu</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak hadir">Tidak Hadir</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 55px;">
+          <button class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+      
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div id="disqus_thread">
+            <script>
+               /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://wedding-tdrunuzsj4.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Good things will happen, always positive thinking Husnudzon, All is well...</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">BCA</div>
+              5981-11-09-1994-61-0 - MoonNearOey
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">MANDIRI</div>
+              990447879 - MoonNearOey
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">MoonNearOey</div>
+              <img src="img/gallery/barcode.jpg" alt="saweria QR" class="img-thumbnail" width="150"
+            </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy;2024 Misbahul Munir All Rights Reserved.</small>
+            <small class="block">Designed by <a href="https://www.linkedin.com/in/misbahul-munir-811387203/">@msbahulmnr</a>.</small>
+
+            <ul class="mt-3">
+              <li><a href="https://www.instagram.com/msbahulmnr"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCUXMnVA3BKFWLWaRLu-MhIw"><i class="bi bi-youtube"></i></a></li>
+              <li><a href="https://twitter.com/MisbahulMunir9"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://mailto:msbahulmnr@gmail.com/"><i class="bi bi-envelope"></i></a></li>
+              <li><a href="https://wa.me/081297613997"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/Laguaz.mobi  Braveheart .mp3" type="audio/mp3">
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none;">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 9, // required
+            day: 11, // required
+            hours: 7, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+                
+      });
+    </script>
+
+    <script>
+      
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      const audioIcon =document.querySelector('.audio-icon-wrapper i');
+      const song = document.querySelector('#song');
+      let isPlaying = false;
+        
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageYOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+        }
+        
+        rootElement.style.scrollBehavior = 'smooth';
+        
+      }
+
+      function enableScroll() {
+        window.onscroll = function () { }
+        rootElement.style.scrollBehavior = 'smooth';
+        //localStorage.setItem('opened', 'true');
+        playAudio()
+      }
+
+      function playAudio() {
+        audioIconWrapper.style.display = 'flex';
+        song.play();
+        isPlaying = true;
+
+      }
+
+      audioIconWrapper.onclick = function() {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        } else {
+          song.play();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle');
+        }
+        isPlaying = !isPlaying;
+      }
+
+      //if(!localStorage.getItem('opened')) {
+      disableScroll();
+      //}
+    </script>
+
+    <script>
+      window.addEventListener("load", function() {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("Konfirmasi kehadiran berhasil terkirim...!");
+        })
+      });
+    });
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      //console.log(nama);
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = pronoun + ' ' + nama;
+
+      document.querySelector('#nama').value = nama;
+    </script>
+  
+  </body>
+</html>
