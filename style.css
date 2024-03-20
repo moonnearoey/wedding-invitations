@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+.sticky-top {
+
+    overflow: hidden;
+
+}
+
 .hero::before {
     content: '';
     position: absolute;
