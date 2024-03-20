@@ -44,7 +44,7 @@ body {
 
 .hero h4 {
     font-size: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 7rem;
 }
 
 .hero p {
@@ -73,7 +73,7 @@ body {
 
 .mynavbar .navbar-brand, .mynavbar .offcanvas-title {
     font-family: "Love Light", cursive;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
     font-weight: bold;
     letter-spacing: 0.2rem;  
 }
@@ -92,6 +92,7 @@ body {
     height: 50vh;
     text-shadow: var(--shadow);
     font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
 }
 
 .mynavbar .nav-link {
